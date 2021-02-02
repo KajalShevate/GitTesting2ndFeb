@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Departmnet" parallel="tests" thread-count="6">
+<listeners><listener class-name="Section18.Listeners"/></listeners>
+  <test  name="Personal Loan">
+  <parameter name="URL" value="personalLoan.com"/>
+    <classes>
+      <class name="Section18.Day1TestNG">
+      <methods><exclude name="secondTest"/></methods>
+      </class>
+      <class name="Section18.Day2"/>
+      <class name="Section18.Day4"/>
+    </classes>
+  </test> 
+  <test name="Car Loan">
+  <parameter name="URLCar" value="CarLoan.com"/>
+  <classes>
+  <class name="Section18.Day3">
+  <methods>
+  <include name="Mobile.*"/>
+  </methods></class>
+  </classes>
+  </test>
+</suite> 
