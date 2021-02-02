@@ -9,6 +9,7 @@ public class Day2 {
 	public void postrequisite()
 	{
 		System.out.println("I will exxecute Last!");
+		System.out.println("Hi Github training welcomes u!");
 	}
 	@Test(groups= {"Smoke"})
 	public void pLoan()
@@ -19,5 +20,6 @@ public class Day2 {
 	public void prerequisite()
 	{
 		System.out.println("I will run first!");
+		System.out.println("Hi Github training begins!");
 	}
 }

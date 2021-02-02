@@ -23,6 +23,7 @@ public class Day3 {
 	public void AfterclassMethod()
 	{
 		System.out.println("After executing any method in the class");
+		System.out.println("github tariner rahul shetty");
 	}
 
 	@Test(timeOut=4000)
